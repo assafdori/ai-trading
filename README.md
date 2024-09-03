@@ -46,7 +46,7 @@ Contributors names and contact info
 
 * 0.2
     * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
+    * See [commit change]() or [release history]()
 * 0.1
     * Initial Release
 
