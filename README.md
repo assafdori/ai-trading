@@ -33,10 +33,8 @@ AI Stock Trading is a stock trading application that leverages artificial intell
 ## Help
 
 Any advise for common problems or issues.
-```
 
 * [GitHub issues](https://github.com/assafdori/ai-trading/issues)
-```
 
 ## Authors
 
