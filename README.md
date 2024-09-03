@@ -25,19 +25,17 @@ AI Stock Trading is a stock trading application that leverages artificial intell
 * Python
 * AWS (S3, EC2, RDS, IAM, ALB, CloudFront, etc.)
 
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Highlights 
+* Fully automated CI/CD pipeline
+* Deployed on AWS using Terraform
+* Built with Python and AWS Lambda
 
 ## Help
 
 Any advise for common problems or issues.
 ```
-command to run if program contains helper info
+
+* [GitHub issues](https://github.com/assafdori/ai-trading/issues)
 ```
 
 ## Authors
@@ -56,13 +54,9 @@ Contributors names and contact info
 
 ## License
 
-This project is licensed under the [MIT] License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
