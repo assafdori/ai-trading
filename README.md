@@ -3,6 +3,8 @@
 
 # AI Stock Trading 📊
 
+## Scenario
+
 Congratulations! You’ve just been hired as a DevOps engineer at a fintech startup. The company’s main product is a website that leverages AI to predict the value of stocks and send daily stock recommendations to customers.
 
 ## Description
