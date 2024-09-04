@@ -36,6 +36,11 @@ Any advise for common problems or issues.
 
 * [GitHub issues](https://github.com/assafdori/ai-trading/issues)
 
+## Structure
+
+* **infrastructure** - Terraform and AWS configuration
+* **application** - Python application
+
 ## Authors
 
 Contributors names and contact info
