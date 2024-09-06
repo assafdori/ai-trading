@@ -1,5 +1,2 @@
-variable "key_name" {
-  description = "Name of the key pair"
-  type        = string
-  default     = "ai-trading-key"
-}
+variable "key_name" {}
+variable "create_private_key" {}

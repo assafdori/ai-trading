@@ -1,24 +1,11 @@
-variable "instance_name" {
-  description = "Value of the Name tag for the EC2 instance"
-  type        = string
-  default     = "ai-trading-server"
-}
+variable "name" {}
 
-variable "instance_type" {
-  description = "The type of EC2 Instances"
-  type        = string
-  default     = "t2.micro"
-}
+variable "instance_type" {}
 
-variable "key_name" {
-  description = "The key name to use for the instance"
-  type        = string
-  default     = "ai-trading"
-}
+variable "key_name" {}
 
-variable "vpc_security_group_ids" {
-  description = "The ID of the security group to associate with the instance"
-  type        = list
-  default     = ["sg-12345678"]
-}
+variable "vpc_security_group_ids" {}
 
+variable "subnet_id" {}
+  
+variable "monitoring" {}
