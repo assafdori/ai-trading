@@ -149,7 +149,6 @@ variable "ingress_rules" {
   description = "Value of the Name tag for the SG"
   type        = list
   default     = ["all-all"]
-
 }
 variable "ingress_with_cidr_blocks" {
   description = "Value of the Name tag for the SG"
