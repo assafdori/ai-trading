@@ -26,5 +26,4 @@ module "key_pair" {
   
   key_name = var.key_name
   create_private_key = var.create_private_key
-
 }
