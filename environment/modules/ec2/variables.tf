@@ -5,7 +5,7 @@ variable "instance_name" {
 }
 
 variable "instance_type" {
-  description = "The type of EC2 Instances to run in the cluster"
+  description = "The type of EC2 Instances"
   type        = string
   default     = "t2.micro"
 }
