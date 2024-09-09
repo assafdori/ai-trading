@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Stock Price Prediction</h1>
+
+        <!-- Form for user to input stock ticker -->
+        <form method="POST">
+            <label for="stock">Enter Stock Ticker:</label>
+            <input type="text" id="stock" name="stock" placeholder="e.g. AAPL" required>
+            <button type="submit">Predict</button>
+        </form>
+
+        <!-- Display today's price and predicted value for user-entered stock -->
+        {% if predicted_value %}
+            <h2>Stock: {{ stock_ticker }}</h2>
+            <p>Today's Price: ${{ predicted_value['today'] }}</p>
+            <p>Predicted Price for Tomorrow:
+                <span style="color: {{ predicted_value['predicted_tomorrow']['color'] }}">
+                    {{ predicted_value['predicted_tomorrow']['sign'] }}${{ predicted_value['predicted_tomorrow']['value'] }}
+                </span>
+            </p>
+        {% endif %}
+
+        <!-- Table for top 10 stock predictions -->
+        <h2>Predictions for Top 10 Stocks</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Stock</th>
+                    <th>Yesterday</th>
+                    <th>Today</th>
+                    <th>Predicted Tomorrow</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock, data in stock_predictions.items() %}
+                    <tr>
+                        <td>{{ stock }}</td>
+                        <td>${{ data['yesterday'] }}</td>
+                        <td>${{ data['today'] }}</td>
+                        <td>
+                            <span style="color: {{ data['predicted_tomorrow']['color'] }}">
+                                {{ data['predicted_tomorrow']['sign'] }}${{ data['predicted_tomorrow']['value'] }}
+                            </span>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
